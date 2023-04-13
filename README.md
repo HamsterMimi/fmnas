@@ -1,6 +1,8 @@
 # March Without Looking Back: A Lightweight NAS via Zero Cost Proxies Based on Feature Maps
 
-## Installation
+## Prepare
+
+### 1. Installation
 
 ```
 python >= 3.6
@@ -10,18 +12,15 @@ tesnsorboard == 2.4.1
 scipy == 1.5.2
 gpustat
 ```
-
-## Usage/Examples
-
-### Prepare
-
-Install `zero-cost-nas` as follow:
+### 2. Install `zero-cost-nas`
 
 ```bash
 cd zero-cost-nas
 pip install .
 cd ..
 ```
+
+## Usage/Examples
 
 ### NAS-Bench-201 Spaces
 
