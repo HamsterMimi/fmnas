@@ -133,7 +133,6 @@ def main():
     criterion = nn.CrossEntropyLoss()
     search_space = SearchSpaceNames[args.search_space]
 
-    # 初始化超网络
     model = TinyNetworkDartsProj(C=args.init_channels, N=5, max_nodes=4, num_classes=n_classes, criterion=criterion, search_space=search_space, args=args)
     model_thin = TinyNetworkDartsProj(C=args.init_channels, N=5, max_nodes=4, num_classes=n_classes, criterion=criterion, search_space=search_space, args=args, stem_channels=1)
     model = model.cuda()

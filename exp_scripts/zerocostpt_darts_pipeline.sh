@@ -31,9 +31,9 @@ python3 networks_proposal.py \
     --proj_crit_normal $metric --proj_crit_reduce $metric --proj_crit_edge $metric \
     --pool_size $pool_size\
 
-cd /jty/zero-cost-pt/zerocostnas/
+cd ../zero-cost-pt/zerocostnas/
 python3 post_validate.py\
-    --ckpt_path ../experiments/sota/$dataset-search-$id-$space-$seed-$pool_size\
+    --ckpt_path ../experiments/sota/$dataset-search-$id-$space-$seed-$pool_size-$metric\
     --save $id --seed $seed --gpu $gpu\
     --edge_decision $edge_decision --proj_crit $metric \
     --batch_size 64\
