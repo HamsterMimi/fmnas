@@ -1,6 +1,7 @@
 # March Without Looking Back: A Lightweight NAS via Zero Cost Proxies Based on Feature Maps
 
 ## Installation
+
 ```
 python >= 3.6
 pytorch == 1.8.0
@@ -45,14 +46,21 @@ You can choice metric from `['snip', 'fisher', 'synflow', 'grad_norm', 'grasp', 
 
 #### 1. DARTS CNN Space
 
-```
+```bash
 cd exp_scripts
 bash zerocostpt_darts_pipline.sh --metric [metric] --batch_size [batch_size] --seed [seed]
 ```
 
+#### 2. DARTS Subspaces S1-S4
 
+````bash
+cd exp_scripts
+bash zerocostpt_darts_pipline.sh --metric [metric] --batch_size [batch_size] --seed [seed] --space [s1-s4]
+````
 
+## Reference
 
+Our code is based on [Zero-Cost-PT](https://github.com/zerocostptnas/zerocost_operation_score).
 
 
 
